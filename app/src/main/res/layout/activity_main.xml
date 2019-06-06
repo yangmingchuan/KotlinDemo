@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.ymc.kotlindemo.MainActivity">
 
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <com.ymc.kotlindemo.RoundImageView
         android:layout_width="200dp"
         android:layout_height="200dp"

@@ -2,6 +2,7 @@ package com.ymc.kotlindemo
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 typealias NumPrint = (Int) -> Int
 typealias Num2Print = (Int) -> Unit
@@ -11,7 +12,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        with(R.id.tv_text) {
+            tv_text.text = "ymc"
+            tv_text.textSize = 23f
+        }
+
+        R.id.tv_text.run {
+            tv_text.text = "ymc"
+            tv_text.textSize = 23f
+        }
     }
+
+
 
     fun main(args: Array<String>) {
 
